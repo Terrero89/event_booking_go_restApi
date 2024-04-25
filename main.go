@@ -10,7 +10,7 @@ import (
 
 func main() {
 	db.InitDB() //initiated DB
-	
+
 	server := gin.Default()
 
 	server.GET("/events", getEvents)
@@ -21,7 +21,11 @@ func main() {
 
 }
 func getEvents(c *gin.Context) {
-	events := models.GetAllEvents()
+	events, err := models.GetAllEvents()
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"message": "Could not fetch events..."})
+		return
+	}
 	c.JSON(http.StatusOK, events)
 }
 
@@ -37,7 +41,11 @@ func createEvent(c *gin.Context) {
 	event.ID = 1
 	event.UserID = 1
 
-	event.Save()
+	err = event.Save()
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"message": "Could not create events..."})
+	}
+
 	//to indicate we created a new event successfully
 	c.JSON(http.StatusCreated, gin.H{"Message": "Event Created", "Event": event})
 }

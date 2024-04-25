@@ -41,6 +41,31 @@ VALUES (?,?,?,?,?)`
 	return err
 }
 
-func GetAllEvents() []Event {
-	return events
-}
+// fetching all the events in db
+func GetAllEvents() ([]Event, error) {
+
+		query := "SELECT * FROM events"
+		rows, err := db.DB.Query(query)
+		if err != nil {
+			return nil, err
+		}
+		defer rows.Close()
+	
+		var events []Event
+	
+		for rows.Next() {
+			var event Event
+			err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Location, &event.DateTime, &event.UserID)
+	
+			if err != nil {
+				return nil, err
+			}
+	
+			events = append(events, event)
+		}
+	
+		return events, nil
+	}
+
+//Exec() is used when you are going to update/insert/delete data in db
+//Query is used to extract/fetches data to see

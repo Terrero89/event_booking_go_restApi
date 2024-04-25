@@ -42,4 +42,3 @@ func createTables() {
 	}
 }
 
-// func createTables() {
