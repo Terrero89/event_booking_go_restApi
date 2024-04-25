@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="Event">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/models/event.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="scannedPathMapping">
       <map>
+        <entry key="file://$PROJECT_DIR$/db/db.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714003403597" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1713836022096" />
+              <option name="lastModified" value="1714003444353" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/models/event.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714009513968" />
+              <option name="schema">
+                <list>
+                  <option value="Event" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastTimeChecked" value="1713834472831" />
+    <option name="tableStructMapping">
+      <map>
+        <entry key="event" value="Event" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1713999049637" />
   </component>
 </project>
