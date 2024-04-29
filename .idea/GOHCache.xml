@@ -10,6 +10,13 @@
             </set>
           </value>
         </entry>
+        <entry key="User">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/models/user.go" />
+            </set>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="scannedPathMapping">
@@ -17,21 +24,21 @@
         <entry key="file://$PROJECT_DIR$/db/db.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714003403597" />
+              <option name="lastModified" value="1714405327774" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714010916600" />
+              <option name="lastModified" value="1714325977909" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/models/event.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714010424801" />
+              <option name="lastModified" value="1714329587656" />
               <option name="schema">
                 <list>
                   <option value="Event" />
@@ -40,13 +47,47 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/models/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714405106730" />
+              <option name="schema">
+                <list>
+                  <option value="User" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/routes/events.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714329783695" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/routes/routes.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714404758971" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/routes/users.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714404758967" />
+            </ScannedPath>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="tableStructMapping">
       <map>
         <entry key="event" value="Event" />
+        <entry key="user" value="User" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1713999049637" />
+    <option name="lastTimeChecked" value="1714405488329" />
   </component>
 </project>
