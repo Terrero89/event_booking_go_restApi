@@ -24,7 +24,7 @@
         <entry key="file://$PROJECT_DIR$/db/db.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714405327774" />
+              <option name="lastModified" value="1714444213343" />
             </ScannedPath>
           </value>
         </entry>
@@ -45,7 +45,7 @@
         <entry key="file://$PROJECT_DIR$/models/event.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714443110420" />
+              <option name="lastModified" value="1714446977395" />
               <option name="schema">
                 <list>
                   <option value="Event" />
@@ -73,10 +73,17 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/routes/register.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714447014076" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/routes/routes.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714441202568" />
+              <option name="lastModified" value="1714446182570" />
             </ScannedPath>
           </value>
         </entry>
