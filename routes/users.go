@@ -4,21 +4,52 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"restApi_go_event_booking/models"
+	"restApi_go_event_booking/utils"
 )
 
 func signup(context *gin.Context) {
-	var user models.User                 //user unstance
-	err := context.ShouldBindJSON(&user) //user being added
-	//if there is an error, then show error 400
+	var user models.User
+
+	err := context.ShouldBindJSON(&user)
+
 	if err != nil {
 		context.JSON(http.StatusBadRequest, gin.H{"message": "Could not parse request data."})
 		return
 	}
-	//using new instance to add it to users struct list
+
 	err = user.Save()
+
 	if err != nil {
-		context.JSON(http.StatusInternalServerError, gin.H{"message": "Could not save user in Database."})
+		context.JSON(http.StatusInternalServerError, gin.H{"message": "Could not save user."})
 		return
 	}
-	context.JSON(http.StatusCreated, gin.H{"message": "USER created successfully."})
+
+	context.JSON(http.StatusCreated, gin.H{"message": "User created successfully"})
+}
+
+func login(context *gin.Context) {
+	var user models.User
+
+	err := context.ShouldBindJSON(&user)
+
+	if err != nil {
+		context.JSON(http.StatusBadRequest, gin.H{"message": "Could not parse request data."})
+		return
+	}
+
+	err = user.ValidateCredentials()
+
+	if err != nil {
+		context.JSON(http.StatusUnauthorized, gin.H{"message": "Could not authenticate user."})
+		return
+	}
+
+	token, err := utils.GenerateToken(user.Email, user.ID)
+
+	if err != nil {
+		context.JSON(http.StatusInternalServerError, gin.H{"message": "Could not authenticate user."})
+		return
+	}
+
+	context.JSON(http.StatusOK, gin.H{"message": "Login successful!", "token": token})
 }

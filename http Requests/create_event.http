@@ -1,0 +1,10 @@
+POST http://localhost:8080/events
+content-type: application/json
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcmdpbzI4QGdtYWlsLmNvbSIsImV4cCI6MTcxNDQ1MDg1OSwidXNlcklkIjozfQ.TeluVhpS1WlWi_AOxklSdvn0iMQ38jUU1dPOh1JV7Mg
+
+{
+  "name": "PEPe20 party",
+  "description": "Test event!!!",
+  "location": "A test location",
+  "dateTime": "2025-01-01T15:30:00.000Z"
+}

@@ -35,10 +35,17 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/middleware/auth.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714440487334" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/models/event.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714329587656" />
+              <option name="lastModified" value="1714443110420" />
               <option name="schema">
                 <list>
                   <option value="Event" />
@@ -50,7 +57,7 @@
         <entry key="file://$PROJECT_DIR$/models/user.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714405106730" />
+              <option name="lastModified" value="1714443563278" />
               <option name="schema">
                 <list>
                   <option value="User" />
@@ -62,21 +69,35 @@
         <entry key="file://$PROJECT_DIR$/routes/events.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714329783695" />
+              <option name="lastModified" value="1714442755127" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/routes/routes.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714404758971" />
+              <option name="lastModified" value="1714441202568" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/routes/users.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1714404758967" />
+              <option name="lastModified" value="1714409633360" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/utils/hash.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714407677934" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/utils/jwt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1714443140364" />
             </ScannedPath>
           </value>
         </entry>
